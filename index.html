@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1364fcdaea.js" crossorigin="anonymous"></script>
+    <title>Bootstrap IG Feed</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="nvbar-bg">  <!-- Class for navbar background -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid d-flex mx-4">
+            <div>
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+            <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating">
+                                <textarea class="form-control rounded-3" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <i class="fa-solid fa-camera me-2 p-1 border rounded border-dark"></i>
+                                <i class="fa-solid fa-map-location p-1 border rounded border-dark"></i>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Other action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <!-- NAVBAR -->
+    <!-- FEED SELECTOR -->
+        <ul class="nav nav-pills border bg-light p-2 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid" aria-selected="true"> <i class="fa-solid fa-table-cells-large"></i> </button>
+            </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-feed-tab" data-bs-toggle="pill" data-bs-target="#pills-feed" type="button" role="tab" aria-controls="pills-feed" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li> 
+    </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+    <!-- FEED SELECTOR -->
+    <!-- GRID -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col p-1">
+                    <img class="img" src="https://woofbarkgrowl.co.uk/wp-content/uploads/2020/10/Schnoodle-2.jpg" alt="Pic1">
+                </div>
+                <div class="col p-1 ">
+                    <img class="img" src="https://theindyreviewdotcom.files.wordpress.com/2021/07/chokeband.jpg" alt="Pic2">
+                </div>
+                <div class="col p-1">
+                    <img class="img" src="https://picsum.photos/960/640" alt="Pic3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img class="img" src="https://www.teahub.io/photos/full/336-3366585_snow-mountain-with-pink-flowers.jpg" alt="Pic1">
+                </div>
+                <div class="col p-1">
+                    <img class="img" src="https://hourlesslife.com/wp-content/uploads/2020/11/Guardian-Grille-Jeep-960x660.jpg" alt="Pic2">
+                </div>
+                <div class="col p-1">
+                    <img class="img" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7cd28f105913249.5f848b4fe9638.gif" alt="Pic3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img class="img" src="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/NYagkdq7obaPZ_RPC9WRboB7YMk=/960x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/4OEOPDHWMUI6TE4XE3DLBWVSQI.jpg" alt="Pic1">
+                </div>
+                <div class="col p-1">
+                    <img class="img" src="https://images.squarespace-cdn.com/content/v1/60788af3c9edcb73a7959082/1618971841978-BRKFVAPQ3A0JPXNP7CHX/image-asset.jpeg" alt="Pic2">
+                </div>
+                <div class="col p-1">
+                    <img class="img" src="https://imageio.forbes.com/blogs-images/forbesagencycouncil/files/2018/04/pexels-photo-265651.jpg?fit=bounds&format=jpg&width=960" alt="Pic3">
+                </div>
+            </div>
+        </div>  
+    <!-- GRID -->
+        </div>
+        <div class="tab-pane fade" id="pills-feed" role="tabpanel" aria-labelledby="pills-feed-tab">
+    <!-- FEED -->
+    <div>
+        <div class="container">
+            <div class="post">
+                <div class="post-header">
+                    <div>
+                        <h2>My First Photo</h2>
+                    </div><div>
+                        <span>03/08</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="img" src="https://woofbarkgrowl.co.uk/wp-content/uploads/2020/10/Schnoodle-2.jpg" alt="Cute Doggy"></img>
+                </div>
+                <div class="post-content">
+                    <p>
+                        <strong>45 likes</strong>
+                    </p>
+                    <p>This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong> - Alfonso Mendez</p>
+                    <p class="comment-bar">
+                        <i class="fa-solid fa-heart p-2"></i> Comment... 
+                        <span class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="post">
+                <div class="post-header">
+                    <div>
+                        <h2>The Warning</h2>
+                    </div><div>
+                        <span>03/10</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="img" src="https://theindyreviewdotcom.files.wordpress.com/2021/07/chokeband.jpg" alt="The Warning band"></img>
+                </div>
+                <div class="post-content">
+                    <p>
+                        <strong>79 likes</strong>
+                    </p>
+                    <p>The Warning, the famous all-women rock band will be starting their Tour this month, it will be called the 'Mayday Tour' and we're really excited! Click here to buy tickets: <a href="https://www.thewarningband.com/tour" target="blank">Mayday Tour 2022</a>. You have been Warned!</p>
+                    <p class="comment-bar">
+                        <i class="fa-solid fa-heart p-2"></i> Comment... 
+                        <span class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="post">
+                <div class="post-header">
+                    <div>
+                        <h2>Visit Delray Beach</h2>
+                    </div><div>
+                        <span>03/14</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="img" src="https://media.istockphoto.com/photos/aerial-drone-photo-delray-beach-florida-reopening-during-coronavirus-picture-id1249035590?k=20&m=1249035590&s=612x612&w=0&h=EKQpFjCUUAU7vFml1RcJkh7iU6u_Wr1NtdJjdCWkApo=" alt="Delray Beach"></img>
+                </div>
+                <div class="post-content">
+                    <p>
+                        <strong>38 likes</strong>
+                    </p>
+                    <p>With the summer coming up everyone's looking for a place to visit and relax, well, Delray Beach is the perfect destination! Delray Beach is a small city on Florida's southeast coast with an incredible beach perfect for spending some quality time, visit now! Directions: <a href="https://www.google.com/maps/dir//Delray+Beach,+FL/@26.4560036,-80.1271934,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88d8dffc90ec6ae3:0xc7780128536eb8b8!2m2!1d-80.0728201!2d26.4614625" target="blank">Delray Beach</a></p>
+                    <p class="comment-bar">
+                        <i class="fa-solid fa-heart p-2"></i> Comment... 
+                        <span class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="post">
+                <div class="post-header">
+                    <div>
+                        <h2>Death Race for Love</h2>
+                    </div><div>
+                        <span>03/20</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="img" src="https://i.ytimg.com/vi/9LSyWM2CL-U/maxresdefault.jpg" alt="Death Race for Love"></img>
+                </div>
+                <div class="post-content">
+                    <p>
+                        <strong>999 likes</strong>
+                    </p>
+                    <p>Today marks the 3 year anniversary of Juice WRLD's last project in life titled Death Race for Love. It revolutionized the hip-hop and rap scene to add more melodic and emotional aspects to it; Today we celebrate once more his life and impact in music. Listen to Juice Wrld here: <a href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz" target="blank">Juice WRLD</a></p>
+                    <p class="comment-bar">
+                        <i class="fa-solid fa-heart p-2"></i> Comment... 
+                        <span class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="post">
+                <div class="post-header">
+                    <div>
+                        <h2>Real Madrid vs. PSG</h2>
+                    </div><div>
+                        <span>03/25</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="img" src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Ftherealchamps.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F07%2F1238509988.jpeg" alt="Real Madrid vs. PSG"></img>
+                </div>
+                <div class="post-content">
+                    <p>
+                        <strong>54 likes</strong>
+                    </p>
+                    <p>This week Real Madrid faces Paris Saint-Germain in the round of 16 of the UEFA Champions League, what a match! Who will go through the next stage? We will know soon.</p>
+                    <p class="comment-bar">
+                        <i class="fa-solid fa-heart p-2"></i> Comment... 
+                        <span class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FEED -->
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
