@@ -57,6 +57,7 @@ div.post .post-content a {
 .dots {
     float: right;
     padding-right: 5px;
+    padding-top: 5px;
     font-size: 20px;
 }
 .row img {
@@ -66,6 +67,14 @@ div.post .post-content a {
 }
 .nvbar-bg {
     background-color: #ebebeb;
+}
+.form-control {
+    height: 20px; 
+    width: 500px; 
+    border: none;
+}
+.fa-heart {
+    float: left;
 }
   /* DETALLES:
  color de fondo de los botones grid y feed (azul --> gris)*/
